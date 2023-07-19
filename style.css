@@ -3,12 +3,35 @@ body {
     font-family: 'Work Sans', sans-serif;
 }
 
+* {
+    margin: 0;
+}
+
+.primary-btn {
+    font-size: 20px;
+    padding: 21px 40px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #FF42A5;
+    font-weight: 600;
+    border-radius: 48px;
+}
+
+.secondary-btn {
+    font-size: 20px;
+    padding: 21px 40px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #4EC5F7;
+    font-weight: 600;
+    border-radius: 48px;
+}
 
 /* Navbar Section */
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 10px 100px;
+    padding: 25px 100px;
     align-items: center;
 }
 
@@ -66,6 +89,76 @@ body {
     border-radius: 15px;
 }
 
+/* Banner Section */
+.banner-section {
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("./images/Group14.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: contain;
+}
+
+.banner-section img {
+    width: 550px;
+}
+
+.banner-content li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.greeting {
+    font-size: 40px;
+    color: #0B0223;
+    font-weight: 600;
+    margin: 0;
+}
+
+.banner-title {
+
+    font-size: 95px;
+    font-family: 'Work Sans', sans-serif;
+    background: linear-gradient(to bottom, #F948B2, #8758F1);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.banner-section .fa-play {
+    border: 2px solid #534C64;
+    padding: 10px;
+    color: #F948B2;
+    border-radius: 50px;
+    font-size: 20px;
+}
+
+.banner-section .fa-download {
+    font-size: 20px;
+    padding: 10px;
+    color: #F948B2;
+}
+
+.banner-section .fa-user-group {
+    font-size: 20px;
+    padding: 10px;
+    color: #534C64;
+}
+
+.banner-list {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 400;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+
+
 /* Mobile Device */
 @media only screen and (max-width: 460px) {
     .navbar {
@@ -76,5 +169,57 @@ body {
     .menu-section ul {
         flex-direction: column;
         padding: 0;
+    }
+
+    .banner-section {
+        flex-direction: column-reverse;
+        background: transparent;
+        justify-content: center;
+    }
+
+    .banner-section img {
+        width: 350px;
+        padding: 10px;
+    }
+
+    .banner-content {
+        padding: 10px;
+        margin-top: 30px;
+    }
+
+    .banner-list {
+        font-size: 16px;
+    }
+
+    .banner-section .fa-play {
+        border: 2px solid #534C64;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    .banner-section .fa-download {
+        font-size: 16px;
+    }
+
+    .banner-section .fa-user-group {
+        font-size: 16px;
+    }
+
+    .greeting {
+        font-size: 30px;
+    }
+
+    .banner-title {
+        font-size: 75px;
+    }
+
+    .primary-btn {
+        display: block;
+        text-align: center;
+    }
+
+    .secondary-btn {
+        display: block;
+        text-align: center;
     }
 }
