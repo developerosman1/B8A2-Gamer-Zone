@@ -75,12 +75,12 @@ body {
     color: #FF42A5;
 }
 
-.fa-youtube {
+.navbar .fa-youtube {
     color: red;
     font-size: 24px;
 }
 
-.fa-tiktok {
+.navbar .fa-tiktok {
     color: black;
     font-size: 24px;
 }
@@ -164,6 +164,28 @@ body {
     gap: 20px;
 }
 
+.menu-section ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.menu-section ul li {
+    color: #3C354F;
+    font-size: 18px;
+}
+
+.menu-section a {
+    text-decoration: none;
+    color: #3C354F;
+    font-size: 18px;
+}
+
+.menu-section a:hover {
+    color: #FF42A5;
+}
+
 /* About Us Section */
 .about-us {
     display: flex;
@@ -228,6 +250,7 @@ body {
     margin-top: 10px;
     text-align: left;
 }
+
 .hover-img {
     background-color: transparent;
     color: #fff;
@@ -269,12 +292,14 @@ body {
     height: 300px;
     backface-visibility: hidden;
 }
-.hover-img figcaption i{
+
+.hover-img figcaption i {
     font-size: 40px;
     line-height: 40px;
     color: #fff;
-    
+
 }
+
 .hover-img figcaption {
     position: absolute;
     top: 0;
@@ -343,6 +368,7 @@ body {
     justify-content: center;
     gap: 50px;
 }
+
 .adds-title {
     font-size: 40px;
     margin-bottom: 10px;
@@ -354,29 +380,210 @@ body {
     font-weight: 400;
     margin-bottom: 20px;
 }
-.about-image {
+
+.adds-image {
     text-align: left;
 }
-.about-image img {
+
+.adds-image img {
     width: 650px;
     text-align: left;
 }
 
-.about-footer-para {
-    color: #534C64;
-    font-size: 24px;
+/* Games Section */
+.games-section {
+    padding: 30px 30px;
+}
+
+.games {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 15px;
+}
+
+.game {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.game:hover {
+    border: 2px solid #F948B2;
+    border-radius: 15px;
+}
+
+.game .img-container img {
+    width: 40px;
+    height: 40px;
+}
+
+.game-title {
+    font-size: 18px;
     font-weight: 500;
-    margin-bottom: 10px;
-    margin-top: 20px;
-
 }
 
-.about-footer-title {
-    color: #534C64;
-    font-size: 30px;
-    font-weight: 700;
-
+/* Footer Section */
+.footer-section {
+    text-align: center;
+    background-color: #0B0223;
+    padding: 100px;
 }
+
+.footer-logo-section {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.footer-menu-section {
+    margin: 30px 0;
+}
+
+.footer-logo-section .name {
+    color: #fff;
+    font-size: 45px;
+}
+
+.footer-menu-section ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-menu-section a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footer-menu-section a:hover {
+    color: #FF42A5;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.footer-socials a {
+    text-decoration: none;
+    font-size: 60px;
+    color: #fff;
+}
+
+.terms-menu-section ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.terms-menu-section a {
+    text-decoration: none;
+    color: #ffffff60;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer-para {
+    color: #ffffff60;
+    margin: 30px 0;
+    font-size: 16px;
+}
+
+/* Tablet Device */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        padding: 15px;
+    }
+
+    .banner-section {
+        flex-direction: column-reverse;
+        background: transparent;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .banner-section img {
+        width: 700px;
+        padding: 10px;
+    }
+
+    .banner-content {
+        padding: 10px;
+        margin-top: 30px;
+    }
+
+    .about-us {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .video-section {
+        padding: 15px;
+    }
+
+    .vedios {
+        flex-wrap: wrap;
+        gap: 2%;
+
+    }
+
+    .video {
+        width: 49%;
+    }
+
+    .adds-section {
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+
+    .adds-section {
+        text-align: center;
+    }
+
+    .adds-image img {
+        width: 700px;
+    }
+
+    .footer-section {
+        padding: 100px 15px;
+    }
+
+    .footer-menu-section ul {
+        flex-wrap: wrap;
+        gap: 1.5%;
+    }
+
+    .terms-menu-section ul {
+        flex-wrap: wrap;
+        gap: 1.5%;
+    }
+
+
+    .footer-socials {
+        flex-wrap: wrap;
+        row-gap: 20px;
+        justify-content: space-evenly;
+
+    }
+}
+
 /* Mobile Device */
 @media only screen and (max-width: 460px) {
     .navbar {
@@ -452,11 +659,73 @@ body {
         justify-content: center;
     }
 
+    .video-section {
+        padding: 15px;
+    }
+
+    .vedios {
+        flex-direction: column;
+    }
+
+    .video {
+        width: 100%;
+    }
+
     .about-image img {
         width: 400px;
     }
 
-    .inline-btn {
-        display: inline;
+    .adds-section {
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+
+    .adds-section {
+        text-align: center;
+    }
+
+    .adds-image img {
+        width: 300px;
+    }
+
+    .games-section {
+        padding: 15px;
+    }
+    .game-title{
+        font-size: 14px;
+    }
+    .games {
+        flex-wrap: wrap;
+        gap: 1%;
+    }
+    .game{
+        width: 40%;
+    }
+
+    .footer-section {
+        padding: 100px 15px;
+    }
+
+    .footer-menu-section ul {
+        flex-wrap: wrap;
+        gap: 1.5%;
+        row-gap: 20px;
+    }
+
+    .terms-menu-section ul {
+        flex-wrap: wrap;
+        gap: 1.5%;
+        row-gap: 20px;
+    }
+
+    .footer-socials .footer-social {
+        width: 32%;
+    }
+
+    .footer-socials {
+        flex-wrap: wrap;
+        gap: 1.5%;
+        row-gap: 20px;
+
     }
 }
